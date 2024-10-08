@@ -104,40 +104,37 @@
                                                 <img alt="photo" src="home/assets/images/avatar2.png" width="60px"
                                                     height="60px" style="margin-left: 5px" />
                                                 <div class="description">
-                                                    <p style="margin: 0px"><b>Mr. TIteng Malaki's Birthday</b></p>
-                                                    <p>November 23</p>
-                                                </div>
-                                                <div class="align-self-end ml-auto"
-                                                    style="margin-bottom: 12px; margin-right: 10px">
-                                                    <button type="button" class="btn btn-primary"
-                                                        style="border-radius: 10px; font-size: 12px">Send Nudes</button>
-                                                </div>
-                                            </div>
-                                            <div class="announcementcard" style="align-items: center">
-                                                <img alt="photo" src="home/assets/images/avatar2.png" width="60px"
-                                                    height="60px" style="margin-left: 5px" />
-                                                <div class="description">
-                                                    <p style="margin: 0px"><b>Mr. TIteng Malaki's Birthday</b></p>
-                                                    <p>November 23</p>
-                                                </div>
-                                                <div class="align-self-end ml-auto"
-                                                    style="margin-bottom: 12px; margin-right: 10px">
-                                                    <button type="button" class="btn btn-primary"
-                                                        style="border-radius: 10px; font-size: 12px">Send Nudes</button>
-                                                </div>
-                                            </div>
-                                            <div class="announcementcard" style="align-items: center">
-                                                <img alt="photo" src="home/assets/images/avatar2.png" width="60px"
-                                                    height="60px" style="margin-left: 5px" />
-                                                <div class="description">
-                                                    <p style="margin: 0px"><b>Mr. TIteng Malaki's Birthday</b></p>
+                                                    <p style="margin: 0px"><b>Mr. Bench Manuel's Birthday</b></p>
                                                     <p>November 23</p>
                                                 </div>
                                                 <div class="align-self-end ml-auto"
                                                     style="margin-bottom: 12px; margin-right: 10px">
                                                     <button type="button" class="btn btn-primary"
                                                         style="border-radius: 10px; font-size: 12px">Send
-                                                        Nudes</button>
+                                                        Message</button>
+                                                </div>
+                                            </div>
+                                            <div class="announcementcard" style="align-items: center">
+                                                <img alt="photo" src="home/assets/images/avatar2.png" width="60px"
+                                                    height="60px" style="margin-left: 5px" />
+                                                <div class="description">
+                                                    <p style="margin: 0px"><b>Mr. Angelo Abargos's Birthday</b></p>
+                                                    <p>November 12</p>
+                                                </div>
+                                                <div class="align-self-end ml-auto"
+                                                    style="margin-bottom: 12px; margin-right: 10px">
+                                                    <button type="button" class="btn btn-primary"
+                                                        style="border-radius: 10px; font-size: 12px">Send
+                                                        Message</button>
+                                                </div>
+                                            </div>
+                                            <div class="announcementcard" style="align-items: center">
+                                                <img alt="photo" src="home/assets/images/avatar2.png" width="60px"
+                                                    height="60px" style="margin-left: 5px" />
+                                                <div class="description">
+                                                    <p style="margin: 0px"><b>Mr. Bench Manuel's 3 days Leave has been
+                                                            Approve</b></p>
+                                                    <p>November 23 - 25</p>
                                                 </div>
                                             </div>
                                         </main>
