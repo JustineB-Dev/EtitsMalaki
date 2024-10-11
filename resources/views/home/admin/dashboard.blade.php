@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="home/assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="home/assets/vendor/charts/c3charts/c3.css">
     <link rel="stylesheet" href="home/assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
-
+    <link rel="stylesheet" href="css/chart.css">
     <link rel="stylesheet" href="css/txt.css">
     <title>Far East Cafe</title>
 </head>
@@ -55,20 +55,20 @@
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="page-header">
                                 <h2 class="pageheader-title">Dashboard </h2>
-                                <!--
+                            
                             <div class="page-breadcrumb">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="#"
+                                        <li class="breadcrumb-item"><a href="/"
                                                 class="breadcrumb-link">Dashboard</a></li>
-                                        
+                                        <!--
                                         <li class="breadcrumb-item active" aria-current="page">Employees
                                             Dashboard</li>
-                                        
+                                        -->
                                     </ol>
                                 </nav>
                             </div>
-                            -->
+                            
                             </div>
                         </div>
                     </div>
@@ -189,23 +189,18 @@
                         <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
                             <div class="card">
                                 <h5 class="card-header"><img src="home/assets/images/employee.png" width="16"
-                                        height="19" style="vertical-align:middle;margin: 7px 0px" />Employee
+                                        height="19" style="vertical-align:middle;margin: 7px 0px" /> Employee
                                     Overview</h5>
                                 <div class="card-body">
 
-                                    <div class="text-center">
-                                        <h5> Product Category </h5>
+                                    <div class="text-center">  
                                         <div class="row">
                                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                                 <div class="card border-3 border-top border-top-primary">
                                                     <div class="card-body">
-                                                        <h5 class="text-muted">Sales</h5>
+                                                        <h5 class="text-muted">Total of Barista</h5>
                                                         <div class="metric-value d-inline-block">
-
-                                                        </div>
-                                                        <div
-                                                            class="metric-label d-inline-block float-right text-success font-weight-bold">
-
+                                                            <h1>4</h1>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -219,13 +214,9 @@
                                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                                 <div class="card border-3 border-top border-top-primary">
                                                     <div class="card-body">
-                                                        <h5 class="text-muted">New Customer</h5>
+                                                        <h5 class="text-muted">Total of Cashier</h5>
                                                         <div class="metric-value d-inline-block">
-
-                                                        </div>
-                                                        <div
-                                                            class="metric-label d-inline-block float-right text-success font-weight-bold">
-
+                                                            <h1>2</h1>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -234,18 +225,15 @@
                                             <!-- end new customer  -->
                                             <!-- ============================================================== -->
                                             <!-- ============================================================== -->
+                                            
                                             <!-- visitor  -->
                                             <!-- ============================================================== -->
                                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                                 <div class="card border-3 border-top border-top-primary">
                                                     <div class="card-body">
-                                                        <h5 class="text-muted">Visitor</h5>
+                                                        <h5 class="text-muted">New Hired</h5>
                                                         <div class="metric-value d-inline-block">
-
-                                                        </div>
-                                                        <div
-                                                            class="metric-label d-inline-block float-right text-success font-weight-bold">
-
+                                                            <h1>0</h1>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -259,13 +247,9 @@
                                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                                 <div class="card border-3 border-top border-top-primary">
                                                     <div class="card-body">
-                                                        <h5 class="text-muted">Total Orders</h5>
+                                                        <h5 class="text-muted">Overall Total of Employees</h5>
                                                         <div class="metric-value d-inline-block">
-
-                                                        </div>
-                                                        <div
-                                                            class="metric-label d-inline-block float-right text-danger font-weight-bold">
-
+                                                            <h1>0</h1>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -275,6 +259,59 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- ============================================================== -->
+                                    <!-- Start of Status Chart Metric  -->
+                                    <!-- ============================================================== -->
+                                    <div class="row">
+                                        <div class="col">
+                                    <div class="chart-container">
+                                        <h2>Employee Status</h2>
+                                        <div class="simple-bar-chart">
+                                            <div class="item" style="--clr: #463426; --val: 100">
+                                                <div class="label"><h6>Active</h6></div>
+                                                    <div class="value">100%</div>
+                                                </div>
+
+                                            <div class="item" style="--clr: #745f4f; --val: 0">
+                                                <div class="label"><h6>Inactive</h6></div>
+                                                <div class="value">0%</div>
+                                            </div>
+  
+                                            <div class="item" style="--clr: #8b5c38; --val: 17">
+                                                <div class="label"><h6>On Leave</h6></div>
+                                                <div class="value">17%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col">   
+                                        <div class="card">
+                                            <div class="card-body" style="height: 200px">
+                                            <hr width="21%" style="margin-top: -20px; border: 1px solid black"
+                                            align="left">
+                                            <h5> <i class="bi bi-bookmark mr-2"></i>Goal Setting</h5>
+                                            <hr>
+                                            <div class="card-body p-0">
+                                                <ul class="social-sales list-group list-group-flush">
+                                                    <li class="list-group-item social-sales-content">
+                                                        <div class="row" style="width: 100%">
+                                                            <div class="col" style="width: 50%">
+                                                            <h4>whatdathelllll</h4>
+                                                            </div>
+                                                            <div class="col" style="width: 50%">
+                                                            <h4>whatdathelllll</h4>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                        </div>
+                                    </div>
+                                    <!--end here-->
                                 </div>
                             </div>
                         </div>
@@ -285,109 +322,9 @@
                     <!-- ============================================================== -->
                     <!-- end product sales  -->
                     <!-- ============================================================== -->
-                    <div class="col-xl-3 col-lg-12 col-md-6 col-sm-12 col-12">
-
-                    </div>
                 </div>
 
-                <div class="row">
-                    <!-- ============================================================== -->
-                    <!-- sales  -->
-                    <!-- ============================================================== -->
-
-                    <div class="row">
-                        <!-- ============================================================== -->
-                        <!-- total revenue  -->
-                        <!-- ============================================================== -->
-
-
-                        <!-- ============================================================== -->
-                        <!-- ============================================================== -->
-                        <!-- category revenue  -->
-                        <!-- ============================================================== -->
-                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                            <div class="card">
-                                <h5 class="card-header">Revenue by Category</h5>
-                            </div>
-                        </div>
-                        <!-- ============================================================== -->
-                        <!-- end category revenue  -->
-                        <!-- ============================================================== -->
-
-                        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-                            <div class="card">
-                                <h5 class="card-header"> Total Revenue</h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <!-- ============================================================== -->
-                            <!-- social source  -->
-                            <!-- ============================================================== -->
-                            <div class="card">
-                                <h5 class="card-header"> Sales By Social Source</h5>
-                                <div class="card-body p-0">
-                                    <ul class="social-sales list-group list-group-flush">
-                                        <li class="list-group-item social-sales-content"><span
-                                                class="social-sales-icon-circle facebook-bgcolor mr-2"><i
-                                                    class="fab fa-facebook-f"></i></span><span
-                                                class="social-sales-name">Facebook</span>
-                                        </li>
-                                        <li class="list-group-item social-sales-content"><span
-                                                class="social-sales-icon-circle twitter-bgcolor mr-2"><i
-                                                    class="fab fa-twitter"></i></span><span
-                                                class="social-sales-name">Twitter</span>
-                                        </li>
-                                        <li class="list-group-item social-sales-content"><span
-                                                class="social-sales-icon-circle instagram-bgcolor mr-2"><i
-                                                    class="fab fa-instagram"></i></span><span
-                                                class="social-sales-name">Instagram</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <a href="#" class="btn-primary-link">View Details</a>
-                                </div>
-                            </div>
-                            <!-- ============================================================== -->
-                            <!-- end social source  -->
-                            <!-- ============================================================== -->
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <!-- ============================================================== -->
-                            <!-- sales traffice source  -->
-                            <!-- ============================================================== -->
-                            <div class="card">
-                                <h5 class="card-header"> Sales By Traffic Source</h5>
-                                <div class="card-body p-0">
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ============================================================== -->
-                        <!-- end sales traffice source  -->
-                        <!-- ============================================================== -->
-                        <!-- ============================================================== -->
-                        <!-- sales traffic country source  -->
-                        <!-- ============================================================== -->
-                        <div class="col-xl-3 col-lg-12 col-md-6 col-sm-12 col-12">
-                            <div class="card">
-                                <h5 class="card-header">Sales By Country Traffic Source</h5>
-                                <div class="card-body p-0">
-
-                                </div>
-                                <div class="card-footer text-center">
-                                    <a href="#" class="btn-primary-link">View Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ============================================================== -->
-                        <!-- end sales traffice country source  -->
-                        <!-- ============================================================== -->
-                    </div>
-                </div>
+                
             </div>
         </div>
         <!-- ============================================================== -->

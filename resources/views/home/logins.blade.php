@@ -67,13 +67,23 @@
                 </form>
             </div>
             <div class="card-footer bg-white p-0  ">
+                
                 <div class="card-footer-item card-footer-item-bordered">
-                    <a href="/signup" class="footer-link">Create An Account</a>
+                    <!--<a href="/signup" class="footer-link">Create An Account</a>-->
+                    <a href="https://www.facebook.com/Fareastcafe2022" target="_blank" class="item"><i
+                            class="fab fa-facebook-f mr-4" style="font-size: 150%"></i></a>
+                    <a href="#" class="item"><i class="fab fa-twitter mr-4"
+                            style="font-size: 150%"></i></a>
+                    <a href="https://www.instagram.com/far_eastcafe?igsh=MXRlcjNiODIyOGRwMA=="
+                        target="_blank" class="item"><i class="fab fa-instagram "
+                            style="font-size: 150%"></i></a>
                 </div>
+                
+
                 <div class="card-footer-item card-footer-item-bordered">
-                    @if (Route::has('password.request'))
+                    
                         <a href="/forgot-passwords" class="footer-link"->{{ __('Forgot Password') }}</a>
-                    @endif
+                    
                 </div>
             </div>
         </div>
