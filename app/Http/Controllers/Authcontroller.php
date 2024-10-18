@@ -33,8 +33,19 @@ class Authcontroller extends Controller
         ]);
         $credentials = $request->only('email','password');
         if(Auth::attempt($credentials)){
-            return redirect()->intended(route("dashboard"));
+            $usertype=Auth::user()->usertype;
+            if($usertype=='0'){
+                return redirect()->intended(route("admindashboard"));
+            }
+            if($usertype=='1'){
+                return redirect()->intended(route("employdashboard"));
+            }
+            else{
+                return view("home.logins");
+            }
+        }else{
+            return redirect()->intended(route('logins'));
         }
-        return redirect()->intended(route('logins'));
+        
     }
 }

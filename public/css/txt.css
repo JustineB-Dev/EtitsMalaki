@@ -7,9 +7,18 @@
   background-size: 50%;
 }
 
+.staff-tbl{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-/*-----------------------
-Splash Container / Wrapper
--------------------------*/
+.staff-tbl td, th{
+  border: 1px solid rgb(184, 179, 179);
+  text-align: center;
+  padding: 8px;
+}
 
-
+.staff-tbl th{
+  color: black;
+}

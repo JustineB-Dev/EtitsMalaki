@@ -90,6 +90,16 @@
                                             alt="">
                                         <span>Github</span></a>
                                 </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                    <a href="https://www.instagram.com/far_eastcafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="connection-item"><img src="home/assets/images/instagram.png"
+                                            alt="">
+                                        <span>Instagram</span></a>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                    <a href="https://www.facebook.com/Fareastcafe2022" target="_blank" class="connection-item"><img src="home/assets/images/facebook.png"
+                                            alt="">
+                                        <span>Facebook</span></a>
+                                </div>
                         </li>
                         <li>
                             <div class="conntection-footer"><a href="#">More</a></div>
@@ -99,16 +109,26 @@
                 <li class="nav-item dropdown nav-user">
                     <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-                            src="home/assets/images/avatar-1.jpg" alt=""
+                            src="home/assets/images/avatar.png" alt=""
                             class="user-avatar-md rounded-circle"></a>
                     <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
                         aria-labelledby="navbarDropdownMenuLink2">
                         <div class="nav-user-info">
                             <h5 class="mb-0 text-white nav-user-name ml-2"> {{ Auth::user()->fname }}
                                 {{ Auth::user()->lname }} </h5>
-                            <span class="status"></span><span class="ml-2">Admin</span>
+                            <span class="status"></span><span class="ml-2">
+                                <?php
+                                 $usertype=Auth::user()->usertype;
+                                if($usertype=='0'){
+                                    echo "Admin";
+                                }
+                                else{
+                                    echo "Employee";
+                                }
+                                ?>
+                            </span>
                         </div>
-                        <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+                        <a class="dropdown-item" href="{{ route('myprofile')}}"><i class="fas fa-user mr-2"></i>Account</a>
                         <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Settings</a>
                         <a class="dropdown-item" href="{{ route('adminlogout') }}"><i
                                 class="fas fa-power-off mr-2"></i>Logout</a>

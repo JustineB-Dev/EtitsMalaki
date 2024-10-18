@@ -13,9 +13,15 @@
     <link rel="stylesheet" href="public/css/txt.css">
     <link rel="stylesheet" href="home/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
     <style>
-        html,
-        body {
+        body, html{
             height: 100%;
+        }
+        body {
+            background-image: url('home/assets/images/20240923_100323.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*backdrop-filter: blur(2px); */
         }
 
         body {
@@ -24,8 +30,10 @@
             -ms-flex-align: center;
             align-items: center;
             padding-top: 40px;
-            padding-bottom: 40px;
+            padding-bottom: 40px; 
         }
+
+
     </style>
 </head>
 
@@ -63,17 +71,28 @@
                         </label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-lg btn-block "
-                        style="background-color: #463426">Sign in</button>
+                        id="signin-btn">Sign in</button>
                 </form>
             </div>
             <div class="card-footer bg-white p-0  ">
+                
                 <div class="card-footer-item card-footer-item-bordered">
-                    <a href="/signup" class="footer-link">Create An Account</a>
+                    <!--<a href="/signup" class="footer-link">Create An Account</a>-->
+                    <!--<a href="https://www.facebook.com/Fareastcafe2022" target="_blank" class="item"><i
+                            class="fab fa-facebook-f mr-4" style="font-size: 150%"></i></a>
+                    <a href="#" class="item"><i class="fab fa-twitter mr-4"
+                            style="font-size: 150%"></i></a>
+                    <a href="https://www.instagram.com/far_eastcafe?igsh=MXRlcjNiODIyOGRwMA=="
+                        target="_blank" class="item"><i class="fab fa-instagram "
+                            style="font-size: 150%"></i></a>-->
+                            <a href="{{route('signupview')}}" class="footer-link">Create An Account</a>
                 </div>
+                
+
                 <div class="card-footer-item card-footer-item-bordered">
-                    @if (Route::has('password.request'))
+                    
                         <a href="/forgot-passwords" class="footer-link"->{{ __('Forgot Password') }}</a>
-                    @endif
+                    
                 </div>
             </div>
         </div>

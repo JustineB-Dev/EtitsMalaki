@@ -25,6 +25,7 @@ return new class extends Migration
             $table->string('civilstatus')->nullable();
             $table->string('facebook')->nullable();
             $table->string('address')->nullable();
+            $table->string('jobtitle')->nullable();
             $table->string('usertype')->default(0);
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
