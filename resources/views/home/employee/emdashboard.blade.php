@@ -438,6 +438,11 @@
     <script src="home/assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
     <script src="home/assets/vendor/charts/c3charts/C3chartjs.js"></script>
     <script src="home/assets/libs/js/dashboard-ecommerce.js"></script>
+    <script>
+        window.addEventListener("beforeunload", function (e) {
+            navigator.sendBeacon('/logout-on-close');
+        });
+    </script>
 </body>
 
 </html>

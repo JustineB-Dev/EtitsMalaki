@@ -182,12 +182,10 @@
                                 <div class="page-breadcrumb">
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a href="/mystaff"
+                                            <li class="breadcrumb-item"><a href="{{route('mystaff')}}"
                                                     class="breadcrumb-link">Staff List</a></li>
-                                            <!--
                                         <li class="breadcrumb-item active" aria-current="page">Employees
                                             Dashboard</li>
-                                        -->
                                         </ol>
                                     </nav>
                                 </div>
@@ -203,7 +201,7 @@
                             <div class="col-xl-12 col-lg-12 col-md-8 col-sm-14 col-14">
                                 <div class="card">
                                     <div class="card-body" style="height: 500px">
-                                        <form class="splash-container" method="post" action="">
+                                        <form class="splash-container" method="post" action="" >
                                             @csrf
                                             @method('post')
                                             <div class="card" style=" width: 150%">
@@ -211,7 +209,7 @@
                                                     <div class="row">
                                                         <div class="col">
                                                             <div class="form-group">
-                                                                <input class="form-control form-control-lg" type="number" name="fname"
+                                                                <input class="form-control form-control-lg" type="number" name="id"
                                                                     placeholder="Employee ID" value="">
                                                             </div>
                                                             <div class="form-group">
@@ -262,7 +260,6 @@
 
     </div>
     </div>
-    @include('home.modal.editstaff')
     <!-- ============================================================== -->
     <!-- footer -->
     <!-- ============================================================== -->

@@ -25,7 +25,8 @@ class AdminController extends Controller
 
     public function edit()
     {
-        /*$staffs = User::all();        */
+        /*$staffs = User::findOrFail($id);*/
+             
         return view("home.modal.editstaff");
     }
 

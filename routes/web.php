@@ -30,20 +30,17 @@ Route::post('/signup', [App\Http\Controllers\SignupController::class, 'signuppos
 //Route::get('/forgot-passwords', [AdminController::class, 'forgotpasswords'])->name(name: 'forgot-passwords');
 
 
-    Route::get('/mystaffs', [App\Http\Controllers\AdminController::class, 'adminstaff'])->name("mystaff")->middleware(['auth', 'auth']);
+Route::get('/mystaffs', [App\Http\Controllers\AdminController::class, 'adminstaff'])->name("mystaff")->middleware(['auth', 'auth']);
 
-    Route::get('/profile', [App\Http\Controllers\AdminController::class, 'profile'])->name("myprofile")->middleware(['auth', 'auth']);
+Route::get('/profile', [App\Http\Controllers\AdminController::class, 'profile'])->name("myprofile")->middleware(['auth', 'auth']);
 
-    Route::get('/admin', [App\Http\Controllers\AdminController::class, 'admindashboard'])->name('admindashboard')->middleware(['auth', 'is_admin']);
+Route::get('/', [App\Http\Controllers\AdminController::class, 'admindashboard'])->name('admindashboard')->middleware(['auth', 'is_admin']);
 
+Route::get('/edit', [App\Http\Controllers\AdminController::class, 'edit'])->name('staff.edit');
 
-Route::get('/mystaffs/edit', [App\Http\Controllers\AdminController::class, 'edit'])->name('staff.edit');
+Route::get('/employee', [App\Http\Controllers\EmployeeController::class, 'emplodashboard'])->name('employdashboard')->middleware(['auth', 'is_employee']);
 
-
-    Route::get('/employee', [App\Http\Controllers\EmployeeController::class, 'emplodashboard'])->name('employdashboard')->middleware(['auth', 'is_employee']);
-
-
-Route::redirect('/', 'logins');
+//Route::redirect('/', 'logins');
 
 //Route::get('/mystaffs/{staff}/edit', [AdminController::class, 'edit'])->name('staff.edit');
 

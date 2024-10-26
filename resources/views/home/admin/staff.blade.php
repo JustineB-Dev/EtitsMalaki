@@ -182,7 +182,7 @@
                                 <div class="page-breadcrumb">
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a href="/mystaffs"
+                                            <li class="breadcrumb-item"><a href="{{route('mystaff')}}"
                                                     class="breadcrumb-link">Staff List</a></li>
                                             <!--
                                         <li class="breadcrumb-item active" aria-current="page">Employees
@@ -209,35 +209,39 @@
                                         </h5>
                                         <hr>
                                         <table class="staff-tbl">
-                                            <tr>
-                                              <th>Employee ID&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
-                                              <th>Last Name&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
-                                              <th>First Name&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
-                                              <th>Middle Name&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
-                                              <th>Email&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
-                                              <th>Phone Number&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
-                                              <th>Job Title&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
-                                              <th>Employee Status&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
-                                              <th>Manage<a href="#"></a></th>
-                                            </tr>
-                                            @foreach ($staffs as $staff)
+                                            <thead>
                                                 <tr>
-                                                    <td>{{$staff->id}}</td>
-                                                    <td>{{$staff->lname}}</td>
-                                                    <td>{{$staff->fname}}</td>
-                                                    <td>{{$staff->mname}}</td>
-                                                    <td>{{$staff->email}}</td>
-                                                    <td>{{$staff->phone}}</td>
-                                                    <td>{{$staff->jobtitle}}</td>
-                                                    <td>None</td>
-                                                    <td>
-                                                            <a href="{{route('staff.edit')}}" class="editbtn">
-                                                                <i class="fa fa-pen-to-square mr-2"></i> 
-                                                            </a>
-                                                        <a href="#"> <i class="fa fa-trash"></i> </a>
-                                                    </td>
+                                                  <th>Employee ID&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
+                                                  <th>Last Name&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
+                                                  <th>First Name&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
+                                                  <th>Middle Name&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
+                                                  <th>Email&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
+                                                  <th>Phone Number&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
+                                                  <th>Job Title&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
+                                                  <th>Employee Status&emsp;<a href="#"><i class="fa fa-sort"></a></i></th>
+                                                  <th>Manage<a href="#"></a></th>
                                                 </tr>
-                                            @endforeach
+                                            </thead>
+                                            <tbody>
+                                                @foreach ($staffs as $staff)
+                                                    <tr>
+                                                        <td>{{$staff->id}}</td>
+                                                        <td>{{$staff->lname}}</td>
+                                                        <td>{{$staff->fname}}</td>
+                                                        <td>{{$staff->mname}}</td>
+                                                        <td>{{$staff->email}}</td>
+                                                        <td>{{$staff->phone}}</td>
+                                                        <td>{{$staff->jobtitle}}</td>
+                                                        <td>None</td>
+                                                        <td>
+                                                                <a href="{{route('staff.edit')}}" class="editbtn">
+                                                                    <i class="fa fa-pen-to-square mr-2"></i> 
+                                                                </a>
+                                                            <a href="#"> <i class="fa fa-trash"></i> </a>
+                                                        </td>
+                                                    </tr>
+                                                @endforeach
+                                            </tbody>
                                         </table>
                                     </div>
                                 </div>
