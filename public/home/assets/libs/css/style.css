@@ -1614,6 +1614,7 @@ Top Header
     background-color: #e2e2eb;
     color: #3d405c;
     border-radius: 2px;
+    
 }
 
 .navigation-horizontal .submenu .nav .nav-item .nav-link:hover {
@@ -1717,7 +1718,7 @@ Left Navigation Sidebar
     padding-left: 12px;
     padding-right: 12px;
     /* margin-top: 5px; */
-    background: #24274a;
+    background: #463426;
 }
 
 .nav-left-sidebar .submenu .nav .nav-item .nav-link {
@@ -1741,7 +1742,7 @@ Left Navigation Sidebar
 }
 
 .nav-left-sidebar .submenu .nav .nav-item .nav-link:hover {
-    color: #3d405c;
+    color: white;
     border-radius: 2px;
     background-color: transparent;
 }
@@ -1952,15 +1953,28 @@ Container / Wrapper
 }
 
 
+.editbtn:hover{
+    color: rgb(76, 251, 76);
+}
+
 /*-----------------------
 Splash Container / Wrapper
 -------------------------*/
+#signin-btn{
+    background-color: #E9DCC9;
+    color: black;
+}
+#signin-btn:hover{
+    background-color: #463426;
+    color: white;
+}
 
 .splash-container {
     width: 100%;
     max-width: 375px;
     padding: 15px;
     margin: auto;
+    background-color: #463426;
 }
 
 .splash-container .card-header {
@@ -3970,7 +3984,7 @@ Pills vertical
 .list-group-item {
     position: relative;
     display: block;
-    padding: 16px 20px;
+    padding: 0px 0px;
     margin-bottom: -1px;
     border: 1px solid #e6e6f2;
 }

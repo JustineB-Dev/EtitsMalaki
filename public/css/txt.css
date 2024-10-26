@@ -7,9 +7,75 @@
   background-size: 50%;
 }
 
+.staff-tbl{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-/*-----------------------
-Splash Container / Wrapper
--------------------------*/
+.staff-tbl td, th{
+  border: 1px solid rgb(184, 179, 179);
+  text-align: center;
+  padding: 8px;
+}
+
+.staff-tbl th{
+  color: black;
+}
 
 
+#image {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+}
+
+.prftext {
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.prfcontainer{
+  position: relative;
+  overflow: hidden;
+  text-align: center
+}
+
+.prfcontainer:hover #image {
+  opacity: 0.3;
+}
+
+.prfcontainer:hover .middle {
+  opacity: 1;
+}
+
+.prftext:hover{
+  background-color: rgb(101, 54, 7);
+  color: white;
+}
+
+.labels {
+  font-size: 11px
+}
+
+.add-attendance:hover {
+  background: #463426;
+  color: #fff;
+  cursor: pointer;
+}

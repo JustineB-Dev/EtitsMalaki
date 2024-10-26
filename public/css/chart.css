@@ -39,9 +39,13 @@
   .simple-bar-chart > .item > * { position: absolute; text-align: center }
   .simple-bar-chart > .item > .label { inset: 100% 0 auto 0; color: black}
   .simple-bar-chart > .item > .value { inset: auto 0 100% 0 }
-  
-  
-  
+  .simple-bar-chart .item { transition: 0.5s; transition-property: background, box-shadow;}
+  .simple-bar-chart .item:hover{
+    background: #cf8a56;
+    box-shadow: 0 0 10px 0 rgba(207, 138, 86, 0.5);
+    cursor: pointer;
+  }
+   
   /* demo */
   .chart-container { 
     color: black;
@@ -51,9 +55,16 @@
     max-width: 550px;
   }
 
-  .column{
-    width: 100%;
-  }
+.goal-edit i{
+  margin-left: 90%;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  transition-property: color, font-size;
+}
+.goal-edit i:hover{
+  color: black;
+  font-size: 17px;
 
-  
+}
 
